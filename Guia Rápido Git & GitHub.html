@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Rápido Git &amp; GitHub</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f0f0; color: #333; padding: 20px; }
+    .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    h1 { text-align: center; color: #2c3e50; margin-bottom: 10px; }
+    h2 { margin-top: 30px; color: #2c3e50; border-bottom: 2px solid #2980b9; padding-bottom: 5px; }
+    pre { background: #ecf0f1; padding: 10px; border-radius: 4px; overflow-x: auto; }
+    code { font-family: Consolas, monospace; color: #c7254e; }
+    .step { margin-bottom: 20px; }
+    .step p { margin: 10px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Guia Rápido Git &amp; GitHub</h1>
+
+    <div class="step">
+      <h2>1. Montou um código novo? Subir para o GitHub</h2>
+      <p>No GitHub: crie um repositório vazio (sem README, .gitignore ou license).</p>
+      <pre><code>cd caminho/do/projeto
+git init -b main
+git remote add origin https://github.com/seu-usuario/seu-repo.git
+git add .
+git commit -m "Primeiro commit"
+git push -u origin main</code></pre>
+    </div>
+
+    <div class="step">
+      <h2>2. Atualizações diárias</h2>
+      <p>Após fazer mudanças:</p>
+      <pre><code>git add .
+git commit -m "Descrição curta do que mudou"
+git push</code></pre>
+    </div>
+
+    <div class="step">
+      <h2>3. Criar ou mudar de branch</h2>
+      <p>Para criar uma nova branch e mudar para ela:</p>
+      <pre><code>git checkout -b nome-da-branch
+# ou
+git switch -c nome-da-branch</code></pre>
+      <p>Para mudar para uma branch existente:</p>
+      <pre><code>git checkout nome-da-branch
+# ou
+git switch nome-da-branch</code></pre>
+    </div>
+
+    <div class="step">
+      <h2>4. Verificar branches</h2>
+      <p>Listar branches locais:</p>
+      <pre><code>git branch</code></pre>
+      <p>Listar branches remotas:</p>
+      <pre><code>git branch -r</code></pre>
+      <p>Listar todas (local + remota):</p>
+      <pre><code>git branch -a</code></pre>
+    </div>
+
+    <div class="step">
+      <h2>5. Deletar branches</h2>
+      <p>Deletar branch local (seguro):</p>
+      <pre><code>git branch -d nome-da-branch</code></pre>
+      <p>Forçar deleção:</p>
+      <pre><code>git branch -D nome-da-branch</code></pre>
+      <p>Deletar branch remota:</p>
+      <pre><code>git push origin --delete nome-da-branch</code></pre>
+    </div>
+
+    <h2>Comandos Avançados</h2>
+
+    <div class="step">
+      <h2>6. Clonar um repositório</h2>
+      <pre><code>git clone https://github.com/usuario/repo.git</code></pre>
+    </div>
+
+    <div class="step">
+      <h2>7. Ver o estado atual &amp; diferenças</h2>
+      <p>Verificar o estado:</p>
+      <pre><code>git status</code></pre>
+      <p>Ver diferenças não comitadas:</p>
+      <pre><code>git diff</code></pre>
+    </div>
+
+    <div class="step">
+      <h2>8. Atualizar do remoto</h2>
+      <pre><code>git pull</code></pre>
+    </div>
+
+    <div class="step">
+      <h2>9. Mesclar e resolver conflitos</h2>
+      <pre><code>git merge outra-branch
+# editar conflitos, depois:
+  git add .
+  git commit</code></pre>
+    </div>
+
+    <div class="step">
+      <h2>10. Stash (guardar mudanças temporárias)</h2>
+      <pre><code>git stash     # guarda alterações
+</code></pre>
+      <pre><code>git stash pop # restaura alterações</code></pre>
+    </div>
+
+    <div class="step">
+      <h2>11. Histórico (log)</h2>
+      <pre><code>git log --oneline --graph --all</code></pre>
+    </div>
+
+    <div class="step">
+      <h2>12. Reverter commits</h2>
+      <p>Criar commit de desfazer:</p>
+      <pre><code>git revert &lt;hash&gt;</code></pre>
+      <p>Resetar posição do HEAD (cuidado!):</p>
+      <pre><code>git reset --hard &lt;hash&gt;</code></pre>
+    </div>
+
+    <div class="step">
+      <h2>13. Tags</h2>
+      <pre><code>git tag v1.0.0
+git push origin v1.0.0</code></pre>
+    </div>
+
+  </div>
+</body>
+</html>
