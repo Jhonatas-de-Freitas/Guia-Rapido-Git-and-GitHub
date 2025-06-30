@@ -5,17 +5,29 @@ Este projeto se trata de uma "cola" de comandos para utilização do GIT e GITHU
 # O arquivo contem contem:
 
 Como subir o código para o GIT HUB;
+
 Como fazer atualizações (commits);
+
 Como criar ou mudar uma branch;
+
 Verificar branch;
+
 Deletar branch;
+
 Clonar um repositório;
+
 Verificar estado atual e diferenças;
+
 Atualizar o remoto;
+
 Mesclar e resolver conflitos;
+
 Guardar mudanças temporárias;
+
 Verificar histório (log);
+
 Reverter commits;
+
 Criar tags;
 
 ---
