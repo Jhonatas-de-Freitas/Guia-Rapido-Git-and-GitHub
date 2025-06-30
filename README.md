@@ -1,4 +1,4 @@
-# Guia rápido GIT e GITHUB 🧮
+# Guia rápido GIT e GITHUB 📖
 ---
 Este projeto se trata de uma "cola" de comandos para utilização do GIT e GITHUB.
 
