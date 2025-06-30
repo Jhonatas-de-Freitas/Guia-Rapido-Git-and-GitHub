@@ -27,6 +27,7 @@ Você pode acessar e visualizar o projeto através do link abaixo: [VER PROJETO]
 # Tecnologias Utilizadas 🚀
 
 **HTML**: Para a estruturação do conteúdo.
+
 **CSS**: Para estilização da pagína.
 
 ---
